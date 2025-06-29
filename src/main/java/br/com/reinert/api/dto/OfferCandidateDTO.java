@@ -1,0 +1,18 @@
+package br.com.reinert.api.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class OfferCandidateDTO {
+
+    private String id;
+    private Boolean selected;
+    private UserDTO user;
+    private OfferDTO offer;
+}
